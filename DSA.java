@@ -23,34 +23,27 @@ public class DSA {
         }
     }
 
-    // {2,3,5}
-    // value = 5
-    // high = 2
-    // low = 0
-    // middle = 1
-    // target = 2
-
-    public static int binarySearch(int array[], int value) {
+    public static int binarySearch(int array[], int target) {
         int high = array.length - 1;
         int low = 0;
-        int index = 0;
+        int index = -1;
 
         while (low <= high) {
-            int middle = low + (low + high) / 2;
-            int target = array[middle];
+            int middle = (high + low) / 2;
 
-            if (value < target) {
+            if (array[middle] < target) {
+                // Too low
+                low = middle + 1;
+            } else if (array[middle] > target) {
                 // Too high
-                high = middle + 1;
-            } else if (value > target) {
-                // Too Low
-                low = middle - 1;
+                high = middle - 1;
             } else {
                 // Value found
-                index = array[middle];
+                return middle;
             }
         }
 
         return index;
     }
+
 }
