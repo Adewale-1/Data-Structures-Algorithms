@@ -2,11 +2,15 @@ import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
 
 public class DSA {
     public static void main(String[] args) {
-        int[] arr = { 9, 3, 5, 3, 25, 3, 36, 436, 7, 76, 9, 9, 4, 35, 6, 7, 78, 45, 4, 3737, 46, 57, 345 };
-        bubbleSort(arr);
-        int value2 = LinearSearch(arr, 3737);
+        int[] arr = { 3, 9, 2, 1, 6 };
+        // bubbleSort(arr);
+        // int value2 = LinearSearch(arr, 3737);
+        // SelectionSort(arr);
         // System.out.println("Value found at index: " + value);
-        System.out.println("Value found at index: " + value2);
+        // System.out.println("Value found at index: " + value2);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+        }
     }
 
     // Sort Algorithms
@@ -29,6 +33,36 @@ public class DSA {
                 }
             }
         }
+    }
+
+    /**
+     * @param
+     * array
+     * @requires
+     *           array is an array
+     * @ensures
+     *          array is sorted
+     */
+    public static void SelectionSort(int[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            int minimum = i;
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[minimum] > array[j]) {
+                    minimum = j;
+                }
+            }
+            int temporary = array[i];
+            array[i] = array[minimum];
+            array[minimum] = temporary;
+        }
+    }
+
+    public static void InsertionSort() {
+
+    }
+
+    private static void MergeSort() {
+
     }
 
     // Search Algorithms
