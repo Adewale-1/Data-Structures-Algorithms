@@ -1,15 +1,22 @@
-import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
+import javax.print.attribute.SetOfIntegerSyntax;
 
 public class DSA {
     public static void main(String[] args) {
-        int[] arr = { 3, 9, 2, 1, 6 };
-        // bubbleSort(arr);
-        // int value2 = LinearSearch(arr, 3737);
+        int[] arr = { 3, 9, 2, 1, 6,34,5,54,76,72,436,475,42,265,65,6764,3234,9054,335 ,35};
+        bubbleSort(arr);
+        // int value2 = binarySearch(arr, 475);
+        // int value2 = LinearSearch(arr, 475);
+        int value2 = InterpolationSearch(arr, 475);
         // SelectionSort(arr);
-        // System.out.println("Value found at index: " + value);
-        // System.out.println("Value found at index: " + value2);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
+        // for (int i = 0; i < arr.length; i++) {
+        //     System.out.print(arr[i]);
+        // }
+
+        if (value2 != -1){
+            System.out.println("Value found at index: " + value2);
+        }
+        else{
+            System.out.println("Value not found");
         }
     }
 
@@ -62,11 +69,18 @@ public class DSA {
     }
 
     private static void MergeSort() {
-
     }
 
     // Search Algorithms
-    // This method takes in an array and gets the index of a value
+    // This method searches for the position of a target within a sorted array. Half of the array was elimated during each step
+                            // Runtime complexity : O(log n)
+
+                            // Disadvantages:
+                            // Not suitable for large data Sets
+
+                            // Advantages:
+                            // Fast for small data Sets
+                            // Suitable for data structures that do not have random access
     /**
      * @param
      * array,        integer
@@ -98,7 +112,16 @@ public class DSA {
         return index;
     }
 
-    // This method takes in an array and gets the index of a value
+    //  Iterate through the array one element at a time
+
+                            // Runtime complexity : O(n)
+
+                            // Disadvantages:
+                            // Not suitable for large data Sets
+
+                            // Advantages:
+                            // Fast for small data Sets
+                            // Suitable for data structures that do not have random access
     /**
      * @param
      * array,        integer
@@ -119,4 +142,46 @@ public class DSA {
         return index;
     }
 
+    //  Improvement over binary search for uniformly distributed.
+    //  It guesses where a value might be based on calculated probe results
+    //  If probe is incorrect, search area is narrowed, and the probe is calculated
+
+                            // Runtime complexity : O(Log(Log n))
+                            // Worst case: 0(n)
+
+                            // Disadvantages:
+                            // Not suitable for large data Sets
+
+                            // Advantages:
+                            // Fast for small data Sets
+                            // Suitable for data structures that do not have random access
+    /**
+     * @param
+     * array,        integer
+     * @requires
+     *           array is an array, target is an integer
+     * @ensures
+     *          index of terget in array
+     */
+    public static int InterpolationSearch(int array[], int target){
+        int high = array.length -1;
+        int low = 0;
+        int index = -1;
+        while (target >= array[low] && target <= array[high] && low <= high && index == -1){
+            int probe = low + (high - low) * (target - array[low])/ (array[high] - array[low]);
+            
+            if (array[probe] == target){
+                index = probe;
+            }
+            else if (array[probe] < target){
+                low = probe + 1;
+            }
+            else {
+                high = probe - 1;
+            }
+        }
+        return index;
+    }
+
 }
+
