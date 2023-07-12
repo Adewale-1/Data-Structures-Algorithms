@@ -2,8 +2,9 @@ import javax.print.attribute.SetOfIntegerSyntax;
 
 public class DSA {
     public static void main(String[] args) {
-        int[] arr = { 3, 9, 2, 1, 6, 34, 5, 54, 76, 72, 436, 475, 42, 265, 65, 6764, 3234, 9054, 335, 35 };
-        InsertionSort(arr);
+        int[] arr = { 3, 9, 2 };
+        // InsertionSort(arr);
+        QuickSort(arr, 0, arr.length - 1);
         // int value2 = binarySearch(arr, 475);
         // int value2 = LinearSearch(arr, 475);
         // int value2 = InterpolationSearch(arr, 475);
@@ -91,7 +92,46 @@ public class DSA {
         }
     }
 
-    private static void MergeSort() {
+    /*
+     * Merge sort = recursively divide array in 2, sort, re-combine
+     * runtime complexity = O(n Log n)
+     * space complexity = O(n)
+     */
+    private static void MergeSort(int[] array) {
+
+    }
+
+    /*
+     * 
+     */
+    private static void QuickSort(int[] array, int start, int end) {
+        if (end <= start) {
+            return;
+        }
+        int pivot = partition(array, start, end);
+
+        QuickSort(array, start, pivot - 1);
+        QuickSort(array, pivot + 1, end);
+    }
+
+    private static int partition(int[] array, int start, int end) {
+
+        int pivot = array[end];
+        int i = start - 1;
+        for (int j = start; j <= end - 1; j++) {
+            if (array[j] < pivot) {
+                i++;
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+        i++;
+        int temp = array[i];
+        array[i] = array[end];
+        array[end] = temp;
+
+        return i;
     }
 
     // Search Algorithms
@@ -136,17 +176,16 @@ public class DSA {
         return index;
     }
 
-    // Iterate through the array one element at a time
-
-    // Runtime complexity : O(n)
-
-    // Disadvantages:
-    // Not suitable for large data Sets
-
-    // Advantages:
-    // Fast for small data Sets
-    // Suitable for data structures that do not have random access
     /**
+     * Iterate through the array one element at a time
+     * Runtime complexity : O(n)
+     * Disadvantages:
+     * Not suitable for large data Sets
+     * 
+     * Advantages:
+     * Fast for small data Sets
+     * Suitable for data structures that do not have random access
+     * 
      * @param
      * array,        integer
      * @requires
