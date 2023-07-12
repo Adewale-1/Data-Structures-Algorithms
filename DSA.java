@@ -102,7 +102,14 @@ public class DSA {
     }
 
     /*
+     * Quick sort = moves smaller elements to left of a pivot.
+     *              Recursively divide array in 2 partitions
      * 
+     * runtime complexity = Best case O(n Log n)
+     *                      Average case O(n log(n))
+     *                      Worst case O(n^2) if already sorted
+     * 
+     * space complexity   = O(log(n)) due to recursion
      */
     private static void QuickSort(int[] array, int start, int end) {
         if (end <= start) {
@@ -243,5 +250,8 @@ public class DSA {
         }
         return index;
     }
+
+
+    
 
 }
