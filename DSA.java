@@ -64,10 +64,11 @@ public class DSA {
         }
     }
 
-    // After computing elements to the left, shift elements to the right to make room to insert a value
-        // Runtime complexity of O(n^2)
-        // Not good for large datasets
-        // Best case: O(n) compared to Selection sort O(n^2)
+    // After computing elements to the left, shift elements to the right to make
+    // room to insert a value
+    // Runtime complexity of O(n^2)
+    // Not good for large datasets
+    // Best case: O(n) compared to Selection sort O(n^2)
     /**
      * @param
      * array
@@ -75,7 +76,7 @@ public class DSA {
      *           array is an array
      * @ensures
      *          array is sorted
-     */   
+     */
     public static void InsertionSort(int array[]) {
 
         for (int i = 1; i < array.length; i++) {
