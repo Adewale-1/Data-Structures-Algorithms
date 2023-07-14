@@ -21,13 +21,13 @@ returns a fixed size list backed by the specified array
 
 
 binarySearch(array, x):
-Seaches for a value in the specified sorted array
+Seaches for a value in the specified sorted array and returns the index
     int intArr[] = {1,2,3,4,19,6,21,8};
-    Array.sort(intArr);
+    Arrays.sort(intArr);
 
-    System.out.println(Array.binarySearch(intArr, 3));
+    System.out.println(Arrays.binarySearch(intArr, 3));
 
-
+    output => 2
 
 
 
@@ -151,12 +151,24 @@ It returns a string representation of the contents of this array. Elements are c
 
 
 
+
 Dynamic Arrays
 
 ArrayList<Integer> name  = new ArrayList<Integer>();
+
+
 Methods:
 add(int index, element):
 This method is used to insert a specific element at  aspecific index in a list
+    ArrayList<String> al = new ArrayList<>();
+
+    al.add("I");
+    al.add("Rule");
+    al.add(1, "like");
+
+    System.out.println(al);
+
+    output => [Geeks, For, Geeks]
 
 add(element):
 This method is used to append a specific element to the end of a list.
@@ -177,8 +189,42 @@ This method is used to return a shallow copy of an ArrayList
 contains(Oject):
 Returns true if the list contains the specified element
 
+
+
+
+sort(list):
+    ArrayList<Integer> list = new ArrayList();
+    list.add(2);
+    list.add(4);
+    list.add(3);
+    list.add(1);
+
+    Collections.sort(list);
+
+    System.out.println("after sorting list:");
+    System.out.println(list);
+
+    output => [1, 2, 3, 4]
+
+
+
+
+
+
 get(int index):
 Returns the element at the specific position in the list.
+    al.add("I");
+    al.add("Geek");
+    al.add(1, "can");
+  
+
+    for (int i = 0; i < al.size(); i++) {
+        System.out.print(al.get(i) + " ");
+    }
+
+    output => I can Geek
+
+
 
 indexOf(Object o):
 The index of the first occurrence of a specifi element is either returned or -1 in case the element is not in the list.
@@ -194,12 +240,44 @@ Removes the element at the specified position in the list.
 
 remove(Object o):
 Removes the first occurrence of the specified element from the list.
+    al.add("Geeks");
+    al.add("Geeks");
 
+    al.add(1, "For");
+
+    System.out.println("Initial ArrayList " + al);
+
+    al.remove(1);
+
+    System.out.println("After the Index Removal " + al);
+
+    al.remove("Geeks");
+
+    System.out.println("After the Object Removal "
+                           + al);
+
+                           
 removeAll(collection c):
 Removes from the list all of its elements that are contained in a specified collection.
 
+
+
+
+
 set(int index,element):
 Replaces the element at the specified position in the list with the specified element
+    al.add("I");
+    al.add("Rule");
+
+    al.add(1, "Like");
+
+    System.out.println("Initial ArrayList " + al);
+    al.set(1, "Don't");
+    System.out.println("Updated ArrayList " + al);
+
+    output => [I,Like,Rule]
+    output => [I,Don't Rule]
+
 
 size():
 Returns the number of elements in the list.
