@@ -28,6 +28,11 @@ Seaches for a value in the specified sorted array
     System.out.println(Array.binarySearch(intArr, 3));
 
 
+
+
+
+
+
 compare( array 1, array 2):
 Compare two arrays lexicographically
 
@@ -72,9 +77,16 @@ Returns a string representation of the "deep contents" of the specified array
 
 equals(array1, array2):
 Checks if both the arrays are equal or not.
+    int intArr[] = { 10, 20, 15, 22, 35 };
+  
+    // Get the second Arrays
+    int intArr1[] = { 10, 15, 22 };
+  
+    // To compare both arrays
+    System.out.println("Integer Arrays on comparison: "
+                           + Arrays.equals(intArr, intArr1));
 
-
-
+    output => Integer Arrays on comparison: false
 
 
 
@@ -132,3 +144,65 @@ It returns a string representation of the contents of this array. Elements are c
                            + Arrays.toString(intArr));
 
     output => Integer Array: [10, 20, 15, 22, 35]
+
+
+
+
+
+
+
+Dynamic Arrays
+
+ArrayList<Integer> name  = new ArrayList<Integer>();
+Methods:
+add(int index, element):
+This method is used to insert a specific element at  aspecific index in a list
+
+add(element):
+This method is used to append a specific element to the end of a list.
+
+addAll(collection):
+This method is used to append all the elements from a specific collection to the end of the mentioned list.
+
+addAll(int index,collection):
+Used to insert all of the elements starting at the specified position froma specified collection into the mentioned list.
+
+
+clear():
+Removes all the elements from any list
+
+clone()
+This method is used to return a shallow copy of an ArrayList
+
+contains(Oject):
+Returns true if the list contains the specified element
+
+get(int index):
+Returns the element at the specific position in the list.
+
+indexOf(Object o):
+The index of the first occurrence of a specifi element is either returned or -1 in case the element is not in the list.
+
+isEmpty():
+Returns true if this list contains no elements
+
+lastIndexOf(Object o):
+The index of the last occurrence of a specific element is either returned or -1 in case the element is not in the list.
+
+remove(int index):
+Removes the element at the specified position in the list.
+
+remove(Object o):
+Removes the first occurrence of the specified element from the list.
+
+removeAll(collection c):
+Removes from the list all of its elements that are contained in a specified collection.
+
+set(int index,element):
+Replaces the element at the specified position in the list with the specified element
+
+size():
+Returns the number of elements in the list.
+
+toArray():
+This method is used to return an array containing all of the elements in the list in the correct order.
