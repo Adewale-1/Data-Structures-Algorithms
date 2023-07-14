@@ -1,0 +1,35 @@
+
+
+
+Static array
+Methods
+asList():
+returns a fixed size list backed by the specified array
+
+
+binarySearch(x):
+Seaches for a value in the specified array
+
+compare( array 1, array 2):
+Compare two arrays lexicographically
+
+copyOf(originalArray, newLength):
+Copies the specified array, truncating or padding with the default value so the copy has the specified length
+
+deepToString(array):
+Returns a string representation of the "deep contents" of the specified array
+
+equals(array1, array2):
+Checks if both the arrays are equal or not.
+
+mismatch(array1, array2):
+Finds and return the index of the first unmatched element between the two specified arrays.
+
+sort(originalArray):
+Sort the complet array in ascending order.
+
+sort(originalArray,formIndex,endIndex):
+Sort the specified range of array in ascending order
+
+toString(originalArray):
+It returns a string representation of the contents of this array. Elements are converted to strings by String.valueOf() function.
