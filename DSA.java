@@ -9,6 +9,7 @@ public class DSA {
         // int value2 = LinearSearch(arr, 475);
         // int value2 = InterpolationSearch(arr, 475);
         // SelectionSort(arr);
+        System.out.println(3/2);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]);
         }
@@ -51,19 +52,7 @@ public class DSA {
      * @ensures
      *          array is sorted
      */
-    public static void SelectionSort(int[] array) {
-        for (int i = 0; i < array.length - 1; i++) {
-            int minimum = i;
-            for (int j = i + 1; j < array.length; j++) {
-                if (array[minimum] > array[j]) {
-                    minimum = j;
-                }
-            }
-            int temporary = array[i];
-            array[i] = array[minimum];
-            array[minimum] = temporary;
-        }
-    }
+ 
 
     // After computing elements to the left, shift elements to the right to make
     // room to insert a value
