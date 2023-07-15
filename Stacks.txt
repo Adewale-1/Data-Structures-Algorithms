@@ -39,6 +39,17 @@ Return true if the stack is empty, else false
 
 search(object element):
 It determines whether an object exists in the stack, if the element is found, it returns the position of the element from the top of the stack.Else, it returns -1.
+    stack.push("Cat");
+    stack.push("Dog");
+    stack.push("Goat");
+	stack.push("Ant");
+    stack.push("Dragon");
+    stack.push("Gorrila");
+	stack.push("Snacks");
+	  
+    System.out.print(stack.search("Cat"));
+    
+    output => 7
 
 
 
