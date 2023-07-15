@@ -21,7 +21,7 @@ returns a fixed size list backed by the specified array
 
 
 binarySearch(array, x):
-Seaches for a value in the specified sorted array and returns the index
+Seaches for a value in the specified sorted array and returns the index, if the index is not found, it return a negative number.
     int intArr[] = {1,2,3,4,19,6,21,8};
     Arrays.sort(intArr);
 
@@ -186,10 +186,19 @@ Removes all the elements from any list
 clone()
 This method is used to return a shallow copy of an ArrayList
 
-contains(Oject):
+
+
+
+contains(Object):
 Returns true if the list contains the specified element
+    ArrayList<Integer> list = new ArrayList();
+    list.add(2);
+    list.add(4);
+    list.add(3);
+    list.add(1);
+    System.out.println(list.contains(5));
 
-
+    output => false;
 
 
 sort(list):
@@ -256,7 +265,7 @@ Removes the first occurrence of the specified element from the list.
     System.out.println("After the Object Removal "
                            + al);
 
-                           
+
 removeAll(collection c):
 Removes from the list all of its elements that are contained in a specified collection.
 
