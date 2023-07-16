@@ -12,7 +12,8 @@ In the Min Heap, the root of the tree is lesser than or equal to all subsequent 
   <img src="/Assets/2.png" width="600" height = "300"/>
 
 No, we have a violation of the heap invariant
-<img src="/Assets/3.png" width="600" height = "300" />
+    <img src="/Assets/3.png" width="600" height = "300" />
 
-<img src="/Assets/4.png"width="600" height = "300" />
+  <img src="/Assets/4.png" width="600" height = "300"/>
+
 Yes! This is a tree and it satisfies the heap invariant.
