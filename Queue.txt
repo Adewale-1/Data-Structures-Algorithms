@@ -29,6 +29,7 @@ For example:
 
 
 Methods:
+
 add(int index,Object o):
 This method is used to add an element at a possible index in the queue.If no index is specified,it simply adds the element at the end of the queue.
 	Queue<String> queue2 = new LinkedList<>();

@@ -1,0 +1,44 @@
+
+
+LinkedList<String> links = new LinkedList<String>();
+
+Methods:
+
+add(int index, element):
+Insert element at the specified position.
+	LinkedList<String> links = new LinkedList<String>();
+
+	links.add("Cat");
+	links.add("Rat");
+	links.add("Tat");
+
+	System.out.print(links);
+    output => [Cat, Rat, Tat]
+
+    links.add(1,"tap");
+
+    output => [Cat, tap, Rat, Tat]
+
+add(int index, Collections c):
+This method appends all the elements in the specified collection to the end of the list.
+
+addFirst(element):
+This methods inserts the element at the beginning of the list.
+
+addLast(element):
+This method insert the element at the end of the list.
+
+clear()
+The method clears the list.
+
+clone()
+This method returns a shallow copy of the Linkedlist.
+
+contains(Object o):
+It returns true if this list contains a specific element.
+
+get(int index):
+This method returns the element at the specific position in the list.
+
+getFirst()
+This method returns the first lement at the specific position in the list.
