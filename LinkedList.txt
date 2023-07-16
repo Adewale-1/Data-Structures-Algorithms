@@ -41,4 +41,59 @@ get(int index):
 This method returns the element at the specific position in the list.
 
 getFirst()
-This method returns the first lement at the specific position in the list.
+This method returns the first element at the specific position in the list.
+
+getLast()
+This method returns the last element at the specific position in the list.
+
+indexOf(Object o):
+This method returns the index of the first occurence of the element in the list or -1 if the list does not contain the element.
+
+offer(element)
+This methods adds the specified element to the end of the list.
+
+poll()
+This method removes the head element from the list.
+
+pollFirst()
+This method retrieves and removes the first element from the list.
+
+pollLast()
+This method retrieves and removes the last element from the list.
+
+peek()
+This method retrieves but does not remove the lead of the list.
+
+peekFirst()
+This method retrieves but does not remove the first element of the list.
+
+peekLast()
+This method retrieves but does not remove the last element of the list.
+
+pop()
+This method pops an element from the stack represented by the list
+
+push(element)
+This method pushes an element onto the stack represented by the list.
+
+remove()
+
+remove(int index)
+
+remove(Object o)
+
+removeFirst()
+
+removeLast()
+
+removeFirstOccurrence(Object o)
+
+removeLastOccurrence(Object o)
+
+set(int index, element)
+
+size()
+
+toArray();
+
+toString()
