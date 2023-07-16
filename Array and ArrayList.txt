@@ -97,7 +97,6 @@ Finds and return the index of the first unmatched element between the two specif
 
     int intArr1[] = { 10, 20, 15 ,5};
   
-    // To compare both arrays
     System.out.println("The element mismatched at index: " + Arrays.mismatch(intArr, intArr1));
                             
     output => The element mismatched at index: 3
@@ -154,7 +153,7 @@ It returns a string representation of the contents of this array. Elements are c
 
 Dynamic Arrays
 
-ArrayList<Integer> name  = new ArrayList<Integer>();
+ArrayList<Integer> array = new ArrayList<Integer>();
 
 
 Methods:

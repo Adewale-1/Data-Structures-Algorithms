@@ -1,0 +1,76 @@
+
+As a LinkedList implementation
+Queue<Integer> queue = new LinkedList<>();
+For example:
+    Queue<Integer> queue = new LinkedList<>();
+    queue.add(100);
+    queue.add(2);
+    queue.add(30);
+    System.out.print(queue.poll());
+
+    output => 100
+
+
+
+As a PriorityQueue implementation: 
+
+
+In order of priority
+Queue<Integer> queue = new PriorityQueue<>();
+For example:
+    Queue<Integer> queue = new PriorityQueue<>();
+    queue.add(100);
+    queue.add(2);
+    queue.add(30);
+    System.out.print(queue.poll());
+
+    output => 2
+
+
+
+Methods:
+add(int index,Object o):
+This method is used to add an element at a possible index in the queue.If no index is specified,it simply adds the element at the end of the queue.
+
+addAll(int index, Collections c)
+Adds all the element in a collection into a queue.
+
+size():
+Returns the size of a queue.
+
+clear()
+Remove all the elements in the queue.
+
+remove()
+Remove the element from the front.
+
+remove(int index)
+Remove the element from a specific index, It shifts subsequent element to the left and the size of the queue reduces by 1.
+
+remove(element):
+Remove and return the first occurrence of the given element in the queue.
+
+get(int index)
+Return element at the specified index
+
+set(int index, element)
+Replaces element at a given index with the new element.
+
+indexOf(element)
+Returns the first occurrence of the given element in the queue or -1 if the element is not present.
+
+lastIndexOf(element) :
+Returns the last occurrence of the element or -1 if the element is not present.
+
+equals(element):
+Compare the element in the queue with the element
+
+isFmpty():
+Returns true if the queue is not empty, false otherwise.
+
+contains(element):
+Returns true if the element is in the queue, false otherwise.
+
+containsAll(Collections c)
+check if the queue contains all the collection of another queue.
+
