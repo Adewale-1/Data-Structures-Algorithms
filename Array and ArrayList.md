@@ -1,4 +1,4 @@
-# Static array
+# Static arrays
 
 ## Methods
 
@@ -117,20 +117,19 @@ It returns a string representation of the contents of this array. Elements are c
     // output => Integer Array: [10, 20, 15, 22, 35]
 ```
 
-```
 
 # Dynamic Arrays
 
-'''
+```
     ArrayList<Integer> array = new ArrayList<Integer>();
-'''
+```
 
 ## Methods:
 
-## add(int index, element):
+### add(int index, element):
 
 This method is used to insert a specific element at aspecific index in a list
-'''
+```
     ArrayList<String> al = new ArrayList<>();
 
     al.add("I");
@@ -140,33 +139,32 @@ This method is used to insert a specific element at aspecific index in a list
     System.out.println(al);
 
     output => [Geeks, For, Geeks]
+```
 
-'''
-
-## add(element):
+### add(element):
 
 This method is used to append a specific element to the end of a list.
 
-## addAll(collection):
+### addAll(collection):
 
 This method is used to append all the elements from a specific collection to the end of the mentioned list.
 
-## addAll(int index,collection):
+### addAll(int index,collection):
 
 Used to insert all of the elements starting at the specified position from a specified collection into the mentioned list.
 
-## clear():
+### clear():
 
 Removes all the elements from any list
 
-## clone()
+### clone()
 
 This method is used to return a shallow copy of an ArrayList
 
-## contains(Object):
+### contains(Object):
 
 Returns true if the list contains the specified element
-'''
+```
     ArrayList<Integer> list = new ArrayList();
     list.add(2);
     list.add(4);
@@ -175,12 +173,11 @@ Returns true if the list contains the specified element
     System.out.println(list.contains(5));
 
     output => false;
+```
 
-'''
+### sort(list):
 
-## sort(list):
-
-'''
+```
     ArrayList<Integer> list = new ArrayList();
     list.add(2);
     list.add(4);
@@ -193,13 +190,12 @@ Returns true if the list contains the specified element
     System.out.println(list);
 
     output => [1, 2, 3, 4]
+```
 
-'''
-
-## get(int index):
+### get(int index):
 
 Returns the element at the specific position in the list.
-'''
+```
     al.add("I");
     al.add("Geek");
     al.add(1, "can");
@@ -209,29 +205,28 @@ Returns the element at the specific position in the list.
     }
 
     output => I can Geek
+```
 
-'''
-
-## indexOf(Object o):
+### indexOf(Object o):
 
 The index of the first occurrence of a specifi element is either returned or -1 in case the element is not in the list.
 
-## isEmpty():
+### isEmpty():
 
 Returns true if this list contains no elements
 
-## lastIndexOf(Object o):
+### lastIndexOf(Object o):
 
 The index of the last occurrence of a specific element is either returned or -1 in case the element is not in the list.
 
-## remove(int index):
+### remove(int index):
 
 Removes the element at the specified position in the list.
 
-## remove(Object o):
+### remove(Object o):
 
 Removes the first occurrence of the specified element from the list.
-'''
+```
     al.add("Geeks");
     al.add("Geeks");
 
@@ -247,17 +242,16 @@ Removes the first occurrence of the specified element from the list.
 
     System.out.println("After the Object Removal "
                            + al);
+```
 
-'''
-
-## removeAll(collection c):
+### removeAll(collection c):
 
 Removes from the list all of its elements that are contained in a specified collection.
 
-## set(int index,element):
+### set(int index,element):
 
 Replaces the element at the specified position in the list with the specified element
-'''
+```
     al.add("I");
     al.add("Rule");
 
@@ -269,14 +263,13 @@ Replaces the element at the specified position in the list with the specified el
 
     output => [I,Like,Rule]
     output => [I,Don't Rule]
+```
 
-'''
-
-## size():
+### size():
 
 Returns the number of elements in the list.
 
-## toArray():
+### toArray():
 
 This method is used to return an array containing all of the elements in the list in the correct order.
-```
+
