@@ -129,7 +129,7 @@ It returns a string representation of the contents of this array. Elements are c
 ### add(int index, element):
 
 This method is used to insert a specific element at aspecific index in a list
-```
+```java
     ArrayList<String> al = new ArrayList<>();
 
     al.add("I");
@@ -164,7 +164,7 @@ This method is used to return a shallow copy of an ArrayList
 ### contains(Object):
 
 Returns true if the list contains the specified element
-```
+```java
     ArrayList<Integer> list = new ArrayList();
     list.add(2);
     list.add(4);
@@ -177,7 +177,7 @@ Returns true if the list contains the specified element
 
 ### sort(list):
 
-```
+```java
     ArrayList<Integer> list = new ArrayList();
     list.add(2);
     list.add(4);
@@ -195,7 +195,7 @@ Returns true if the list contains the specified element
 ### get(int index):
 
 Returns the element at the specific position in the list.
-```
+```java
     al.add("I");
     al.add("Geek");
     al.add(1, "can");
@@ -226,7 +226,7 @@ Removes the element at the specified position in the list.
 ### remove(Object o):
 
 Removes the first occurrence of the specified element from the list.
-```
+```java
     al.add("Geeks");
     al.add("Geeks");
 
@@ -251,7 +251,7 @@ Removes from the list all of its elements that are contained in a specified coll
 ### set(int index,element):
 
 Replaces the element at the specified position in the list with the specified element
-```
+```java
     al.add("I");
     al.add("Rule");
 
