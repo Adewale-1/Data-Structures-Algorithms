@@ -2,6 +2,7 @@
 This is a sequential list of nodes that holds data which point to other nodes also containing data
 
 Used in many List,Queue and Stack implementations.
+
 ```java
 	LinkedList<String> links = new LinkedList<String>();
 ```
