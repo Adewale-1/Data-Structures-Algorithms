@@ -6,7 +6,7 @@ This is a linear data structure which models real world queues by having two pri
 ```java
     Queue<Integer> queue = new LinkedList<>();
 ```
-
+ 
 For example:
 
 ```java
