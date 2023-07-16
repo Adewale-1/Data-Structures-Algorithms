@@ -2,121 +2,127 @@
 
 ## Methods
 
-## asList():
+### asList():
 
-returns a fixed size list backed by the specified array
-'''java
-int intArr[] = {1,2,3,4,5,6,7,8};
-System.out.println(Array.asList(intArr))
+Returns a fixed size list backed by the specified array
 
-output => [1,2,3,4,5,6,7,8]
-'''
+```java
+    int intArr[] = {1,2,3,4,5,6,7,8};
+    System.out.println(Array.asList(intArr));
 
-## binarySearch(array, x):
+    // output => [1,2,3,4,5,6,7,8]
+```
 
-Seaches for a value in the specified sorted array and returns the index, if the index is not found, it return a negative number.
-'''java
-int intArr[] = {1,2,3,4,19,6,21,8};
-Arrays.sort(intArr);
+### binarySearch(array, x):
 
-System.out.println(Arrays.binarySearch(intArr, 3));
+Searches for a value in the specified sorted array and returns the index, if the index is not found, it return a negative number.
 
-output => 2
-'''
+```java
+    int intArr[] = {1,2,3,4,19,6,21,8};
+    Arrays.sort(intArr);
 
-## compare( array 1, array 2):
+    System.out.println(Arrays.binarySearch(intArr, 3));
+
+    // output => 2
+```
+
+### compare( array 1, array 2):
 
 Compare two arrays lexicographically
 
-## copyOf(originalArray, newLength):
+### copyOf(originalArray, newLength):
 
 Copies the specified array, truncating or padding with the default value so the copy has the specified length
 
-'''java
-int intArr[] = { 10, 20, 15, 22, 35 };
-System.out.println("Integer Array: " + Arrays.toString(
-Arrays.copyOf(intArr, 10)));
+```java
+    int intArr[] = { 10, 20, 15, 22, 35 };
+    System.out.println("Integer Array: " + Arrays.toString(
+    Arrays.copyOf(intArr, 10)));
 
-output => Integer Array: [10, 20, 15, 22, 35, 0, 0, 0, 0, 0]
-'''
+    // output => Integer Array: [10, 20, 15, 22, 35, 0, 0, 0, 0, 0]
+```
 
-## copyOf(originalArray, fromIndex, endIndex):
+### copyOf(originalArray, fromIndex, endIndex):
 
-'''java
-int intArr[] = { 10, 20, 15, 22, 35 };
-System.out.println("Integer Array: " + Arrays.toString(
-Arrays.copyOfRange(intArr, 1, 3)));
+```java
+    int intArr[] = { 10, 20, 15, 22, 35 };
+    System.out.println("Integer Array: " + Arrays.toString(
+    Arrays.copyOfRange(intArr, 1, 3)));
 
-output => Integer Array: [20, 15]
-'''
+    // output => Integer Array: [20, 15]
+```
 
-## deepToString(array):
+### deepToString(array):
 
 Returns a string representation of the "deep contents" of the specified array
 
-## equals(array1, array2):
+### equals(array1, array2):
 
 Checks if both the arrays are equal or not.
-'''java
-int intArr[] = { 10, 20, 15, 22, 35 };
 
-int intArr1[] = { 10, 15, 22 };
-System.out.println("Integer Arrays on comparison: " + Arrays.equals(intArr, intArr1));
+```java
+    int intArr[] = { 10, 20, 15, 22, 35 };
 
-output => Integer Arrays on comparison: false
-'''
+    int intArr1[] = { 10, 15, 22 };
+    System.out.println("Integer Arrays on comparison: " + Arrays.equals(intArr, intArr1));
 
-## mismatch(array1, array2):
+    // output => Integer Arrays on comparison: false
+```
+
+### mismatch(array1, array2):
 
 Finds and return the index of the first unmatched element between the two specified arrays.
-'''java
-int intArr[] = { 10, 20, 15, 22, 35 };
 
+```java
+    int intArr[] = { 10, 20, 15, 22, 35 };
     int intArr1[] = { 10, 20, 15 ,5};
-
     System.out.println("The element mismatched at index: " + Arrays.mismatch(intArr, intArr1));
 
-    output => The element mismatched at index: 3
+    // output => The element mismatched at index: 3
+```
 
-'''
-
-## sort(originalArray):
+### sort(originalArray):
 
 Sort the complete array in ascending order.
-'''java
-int intArr[] = { 10, 20, 15, 22, 35 };
-Arrays.sort(intArr);
-System.out.println("Integer Array: " + Arrays.toString(intArr));
 
-output => Integer Array: [10, 15, 20, 22, 35]
-'''
+```java
+    int intArr[] = { 10, 20, 15, 22, 35 };
+    Arrays.sort(intArr);
+    System.out.println("Integer Array: " + Arrays.toString(intArr));
 
-## sort(originalArray,formIndex,endIndex):
+    // output => Integer Array: [10, 15, 20, 22, 35]
+```
+
+### sort(originalArray,formIndex,endIndex):
 
 Sort the specified range of array in ascending order from a start index to a end index - 1.
-'''java
-int intArr[] = { 10, 15, 2, 1, 35 };
-Arrays.sort(intArr, 1, 3);
-System.out.println("Integer Array: "
-+Arrays.toString(intArr));
 
-output => Integer Array: [10, 2, 15, 1, 35]
-'''
+```java
+    int intArr[] = { 10, 15, 2, 1, 35 };
+    Arrays.sort(intArr, 1, 3);
+    System.out.println("Integer Array: "
+    +Arrays.toString(intArr));
 
-## toString(originalArray):
+    // output => Integer Array: [10, 2, 15, 1, 35]
+```
+
+### toString(originalArray):
 
 It returns a string representation of the contents of this array. Elements are converted to strings by String.valueOf() function.
-'''
-int intArr[] = { 10, 20, 15, 22, 35 };
-System.out.println("Integer Array: " + Arrays.toString(intArr));
 
-output => Integer Array: [10, 20, 15, 22, 35]
-'''
+```java
+    int intArr[] = { 10, 20, 15, 22, 35 };
+    System.out.println("Integer Array: " + Arrays.toString(intArr));
+
+    // output => Integer Array: [10, 20, 15, 22, 35]
+```
+
+```
 
 # Dynamic Arrays
 
 '''
-ArrayList<Integer> array = new ArrayList<Integer>();
+    ArrayList<Integer> array = new ArrayList<Integer>();
 '''
 
 ## Methods:
@@ -125,7 +131,7 @@ ArrayList<Integer> array = new ArrayList<Integer>();
 
 This method is used to insert a specific element at aspecific index in a list
 '''
-ArrayList<String> al = new ArrayList<>();
+    ArrayList<String> al = new ArrayList<>();
 
     al.add("I");
     al.add("Rule");
@@ -161,12 +167,12 @@ This method is used to return a shallow copy of an ArrayList
 
 Returns true if the list contains the specified element
 '''
-ArrayList<Integer> list = new ArrayList();
-list.add(2);
-list.add(4);
-list.add(3);
-list.add(1);
-System.out.println(list.contains(5));
+    ArrayList<Integer> list = new ArrayList();
+    list.add(2);
+    list.add(4);
+    list.add(3);
+    list.add(1);
+    System.out.println(list.contains(5));
 
     output => false;
 
@@ -175,11 +181,11 @@ System.out.println(list.contains(5));
 ## sort(list):
 
 '''
-ArrayList<Integer> list = new ArrayList();
-list.add(2);
-list.add(4);
-list.add(3);
-list.add(1);
+    ArrayList<Integer> list = new ArrayList();
+    list.add(2);
+    list.add(4);
+    list.add(3);
+    list.add(1);
 
     Collections.sort(list);
 
@@ -194,9 +200,9 @@ list.add(1);
 
 Returns the element at the specific position in the list.
 '''
-al.add("I");
-al.add("Geek");
-al.add(1, "can");
+    al.add("I");
+    al.add("Geek");
+    al.add(1, "can");
 
     for (int i = 0; i < al.size(); i++) {
         System.out.print(al.get(i) + " ");
@@ -226,8 +232,8 @@ Removes the element at the specified position in the list.
 
 Removes the first occurrence of the specified element from the list.
 '''
-al.add("Geeks");
-al.add("Geeks");
+    al.add("Geeks");
+    al.add("Geeks");
 
     al.add(1, "For");
 
@@ -252,8 +258,8 @@ Removes from the list all of its elements that are contained in a specified coll
 
 Replaces the element at the specified position in the list with the specified element
 '''
-al.add("I");
-al.add("Rule");
+    al.add("I");
+    al.add("Rule");
 
     al.add(1, "Like");
 
@@ -273,3 +279,4 @@ Returns the number of elements in the list.
 ## toArray():
 
 This method is used to return an array containing all of the elements in the list in the correct order.
+```
