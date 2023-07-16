@@ -9,7 +9,7 @@ In the Min Heap, the root of the tree is lesser than or equal to all subsequent 
 
 ## For Example
 
-  <img src="/Assets/2.png" width="900" />
+  <img src="/Assets/2.png" width="900" height = "300"/>
 
 No, we have a violation of the heap invariant
 <img src="/Assets/3.png" width="900" />
