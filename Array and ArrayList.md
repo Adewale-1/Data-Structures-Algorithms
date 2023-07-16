@@ -119,7 +119,7 @@ It returns a string representation of the contents of this array. Elements are c
 
 
 # Dynamic Arrays
-
+They can grow and shrink in size
 ```
     ArrayList<Integer> array = new ArrayList<Integer>();
 ```

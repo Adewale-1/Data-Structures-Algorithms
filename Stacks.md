@@ -1,4 +1,5 @@
 # Stacks
+A stack is a one-ended linear data structure which models a real world stack by having two primary operations, namely push and pop.
 
 ```
     Stack<String> stack = new Stack<String>();
