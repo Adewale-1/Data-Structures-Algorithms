@@ -31,6 +31,13 @@ For example:
 Methods:
 add(int index,Object o):
 This method is used to add an element at a possible index in the queue.If no index is specified,it simply adds the element at the end of the queue.
+	Queue<String> queue2 = new LinkedList<>();
+    queue2.add("Cat");
+	queue2.add("Bat");
+	queue2.add("Rat");
+	System.out.print(queue2);
+
+    output => [Cat, Bat, Rat]
 
 addAll(int index, Collections c)
 Adds all the element in a collection into a queue.
@@ -44,11 +51,29 @@ Remove all the elements in the queue.
 remove()
 Remove the element from the front.
 
+	Queue<String> queue2 = new LinkedList<>();
+    queue2.add("Cat");
+	queue2.add("Bat");
+	queue2.add("Rat");
+	queue2.remove();
+	System.out.print(queue2);
+
+    output => [Bat, Rat]
+
 remove(int index)
 Remove the element from a specific index, It shifts subsequent element to the left and the size of the queue reduces by 1.
 
 remove(element):
 Remove and return the first occurrence of the given element in the queue.
+
+	Queue<String> queue2 = new LinkedList<>();
+    queue2.add("Cat");
+	queue2.add("Bat");
+	queue2.add("Rat");
+	queue2.remove("Bat");
+	System.out.print(queue2);
+
+    output => [Cat, Rat]
 
 get(int index)
 Return element at the specified index
@@ -65,12 +90,34 @@ Returns the last occurrence of the element or -1 if the element is not present.
 equals(element):
 Compare the element in the queue with the element
 
-isFmpty():
+isEmpty():
 Returns true if the queue is not empty, false otherwise.
 
 contains(element):
 Returns true if the element is in the queue, false otherwise.
+	Queue<String> queue2 = new LinkedList<>();
+    queue2.add("Cat");
+	queue2.add("Bat");
+	queue2.add("Rat");
+	System.out.print(queue2.contains("Rat"));
+
+    output => true
+
 
 containsAll(Collections c)
 check if the queue contains all the collection of another queue.
 
+
+
+offer(Object o)
+This method adds a specified element into the queue.
+
+
+
+poll()
+This method is used to return and remove the head of the queue.
+
+
+
+peek()
+This method returns a copy of the head of the queue.
