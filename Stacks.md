@@ -1,12 +1,16 @@
+# Stacks
 
+```
+    Stack<String> stack = new Stack<String>();
+```
 
+## Methods:
 
-Stack<String> stack = new Stack<String>();
+## push(Object element):
 
-Methods:
-
-push(Object element):
 Add to the top of the stack
+
+```
     Stack<String> stack = new Stack<String>();
     stack.push("Cat");
     stack.push("Dog");
@@ -15,17 +19,25 @@ Add to the top of the stack
     System.out.print(stack);
 
     output => [Cat, Dog, Goat]
+```
 
-pop():
+## pop():
+
 Remove from the top of the stack
+
+```
     Stack<String> stack = new Stack<String>();
     stack.pop();
     System.out.print(stack);
 
     output => [Cat, Dog]
+```
 
-peek():
+## peek():
+
 Returns the element at the top of the stack ,without deleting it.
+
+```
     Stack<String> stack = new Stack<String>();
     String value = stack.peek();
     System.out.print(value);
@@ -33,12 +45,17 @@ Returns the element at the top of the stack ,without deleting it.
 
     output => Goat
     output => [Cat, Dog, Goat]
+```
 
-empty():
+## empty():
+
 Return true if the stack is empty, else false
 
-search(object element):
+## search(object element):
+
 It determines whether an object exists in the stack, if the element is found, it returns the position of the element from the top of the stack.Else, it returns -1.
+
+```
     stack.push("Cat");
     stack.push("Dog");
     stack.push("Goat");
@@ -46,12 +63,8 @@ It determines whether an object exists in the stack, if the element is found, it
     stack.push("Dragon");
     stack.push("Gorrila");
 	stack.push("Snacks");
-	  
+
     System.out.print(stack.search("Cat"));
-    
+
     output => 7
-
-
-
-
-
+```
