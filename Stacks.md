@@ -11,7 +11,7 @@ A stack is a one-ended linear data structure which models a real world stack by 
 
 Add to the top of the stack
 
-```
+```java
     Stack<String> stack = new Stack<String>();
     stack.push("Cat");
     stack.push("Dog");
@@ -26,7 +26,7 @@ Add to the top of the stack
 
 Remove from the top of the stack
 
-```
+```java
     Stack<String> stack = new Stack<String>();
     stack.pop();
     System.out.print(stack);
@@ -38,7 +38,7 @@ Remove from the top of the stack
 
 Returns the element at the top of the stack ,without deleting it.
 
-```
+```java
     Stack<String> stack = new Stack<String>();
     String value = stack.peek();
     System.out.print(value);
@@ -56,7 +56,7 @@ Return true if the stack is empty, else false
 
 It determines whether an object exists in the stack, if the element is found, it returns the position of the element from the top of the stack.Else, it returns -1.
 
-```
+```java
     stack.push("Cat");
     stack.push("Dog");
     stack.push("Goat");

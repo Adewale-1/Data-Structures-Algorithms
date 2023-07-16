@@ -3,13 +3,13 @@ This is a linear data structure which models real world queues by having two pri
 
 ## As a LinkedList implementation
 
-```
+```java
     Queue<Integer> queue = new LinkedList<>();
 ```
 
 For example:
 
-```
+```java
     Queue<Integer> queue = new LinkedList<>();
     queue.add(100);
     queue.add(2);
@@ -23,13 +23,13 @@ For example:
 
 In order of priority
 
-```
+```java
     Queue<Integer> queue = new PriorityQueue<>();
 ```
 
 For example:
 
-```
+```java
     Queue<Integer> queue = new PriorityQueue<>();
     queue.add(100);
     queue.add(2);
@@ -45,7 +45,7 @@ For example:
 
 This method is used to add an element at a possible index in the queue.If no index is specified,it simply adds the element at the end of the queue.
 
-```
+```java
 	Queue<String> queue2 = new LinkedList<>();
     queue2.add("Cat");
 	queue2.add("Bat");
@@ -71,7 +71,7 @@ Remove all the elements in the queue.
 
 Remove the element from the front.
 
-```
+```java
 	Queue<String> queue2 = new LinkedList<>();
     queue2.add("Cat");
 	queue2.add("Bat");
@@ -90,7 +90,7 @@ Remove the element from a specific index, It shifts subsequent element to the le
 
 Remove and return the first occurrence of the given element in the queue.
 
-```
+```java
 	Queue<String> queue2 = new LinkedList<>();
     queue2.add("Cat");
 	queue2.add("Bat");
@@ -129,7 +129,7 @@ Returns true if the queue is not empty, false otherwise.
 
 Returns true if the element is in the queue, false otherwise.
 
-```
+```java
 	Queue<String> queue2 = new LinkedList<>();
     queue2.add("Cat");
 	queue2.add("Bat");

@@ -209,7 +209,7 @@ Returns the element at the specific position in the list.
 
 ### indexOf(Object o):
 
-The index of the first occurrence of a specifi element is either returned or -1 in case the element is not in the list.
+The index of the first occurrence of a specific element is either returned or -1 in case the element is not in the list.
 
 ### isEmpty():
 
