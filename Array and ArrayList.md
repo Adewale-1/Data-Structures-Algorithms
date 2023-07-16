@@ -5,7 +5,7 @@
 ## asList():
 
 returns a fixed size list backed by the specified array
-'''
+'''java
 int intArr[] = {1,2,3,4,5,6,7,8};
 System.out.println(Array.asList(intArr))
 
@@ -15,7 +15,7 @@ output => [1,2,3,4,5,6,7,8]
 ## binarySearch(array, x):
 
 Seaches for a value in the specified sorted array and returns the index, if the index is not found, it return a negative number.
-'''
+'''java
 int intArr[] = {1,2,3,4,19,6,21,8};
 Arrays.sort(intArr);
 
@@ -32,7 +32,7 @@ Compare two arrays lexicographically
 
 Copies the specified array, truncating or padding with the default value so the copy has the specified length
 
-'''
+'''java
 int intArr[] = { 10, 20, 15, 22, 35 };
 System.out.println("Integer Array: " + Arrays.toString(
 Arrays.copyOf(intArr, 10)));
@@ -42,9 +42,8 @@ output => Integer Array: [10, 20, 15, 22, 35, 0, 0, 0, 0, 0]
 
 ## copyOf(originalArray, fromIndex, endIndex):
 
-'''
+'''java
 int intArr[] = { 10, 20, 15, 22, 35 };
-
 System.out.println("Integer Array: " + Arrays.toString(
 Arrays.copyOfRange(intArr, 1, 3)));
 
@@ -58,7 +57,7 @@ Returns a string representation of the "deep contents" of the specified array
 ## equals(array1, array2):
 
 Checks if both the arrays are equal or not.
-'''
+'''java
 int intArr[] = { 10, 20, 15, 22, 35 };
 
 int intArr1[] = { 10, 15, 22 };
@@ -70,7 +69,7 @@ output => Integer Arrays on comparison: false
 ## mismatch(array1, array2):
 
 Finds and return the index of the first unmatched element between the two specified arrays.
-'''
+'''java
 int intArr[] = { 10, 20, 15, 22, 35 };
 
     int intArr1[] = { 10, 20, 15 ,5};
@@ -84,7 +83,7 @@ int intArr[] = { 10, 20, 15, 22, 35 };
 ## sort(originalArray):
 
 Sort the complete array in ascending order.
-'''
+'''java
 int intArr[] = { 10, 20, 15, 22, 35 };
 Arrays.sort(intArr);
 System.out.println("Integer Array: " + Arrays.toString(intArr));
@@ -95,7 +94,7 @@ output => Integer Array: [10, 15, 20, 22, 35]
 ## sort(originalArray,formIndex,endIndex):
 
 Sort the specified range of array in ascending order from a start index to a end index - 1.
-'''
+'''java
 int intArr[] = { 10, 15, 2, 1, 35 };
 Arrays.sort(intArr, 1, 3);
 System.out.println("Integer Array: "
