@@ -77,23 +77,34 @@ push(element)
 This method pushes an element onto the stack represented by the list.
 
 remove()
+This method retrieves and removes the head of the list.
 
 remove(int index)
+This method removes an element at the specified index from the list.
 
 remove(Object o)
+This method removes the first occurrence of the specified element from the list.
 
 removeFirst()
+This method removes and return the first element from the list.
 
 removeLast()
+This method removes and return the last element from the list.
 
 removeFirstOccurrence(Object o)
+This method removes the first occurrence of the specified element in the list.
 
 removeLastOccurrence(Object o)
+This method removes the last occurrence of the specified element in the list.
 
 set(int index, element)
+This method replaces the element at the specified position in the list.
 
 size()
+This method returns the number of elements in the list.
 
 toArray();
+This method returns an array containing all of the elements in the list.
 
 toString()
+This method returns a string containing all of the elements in the list.
