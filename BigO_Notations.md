@@ -76,6 +76,7 @@ Since all constant are insignificant,then
     n + n(n) => n + n^2
 ```
 The more dominant term is ```n^2```, the the method runs in ```O(n^2)```
+</details>
 
 ## Question 4
 What is the BigO of the algorithm below?
@@ -111,6 +112,7 @@ All constants are dropped.
     n + m
 ```
 So O(n + m)
+</details>
 
 ## Question 5
 What is the BigO of the algorithm below?
@@ -165,5 +167,5 @@ All constant are dropped
 ```
     hw
 ```
-Thus `O(hw)`
+Thus ```O(hw)```
 </details>
