@@ -129,7 +129,8 @@ What is the BigO of the algorithm below?
         return total
 ```
 This answer is ```O(hw)```
-### Explanation
+<details>
+ <summary><h3>Explanation</h3></summary>
 Here is a nested list
 ```
     [[] [] []]
