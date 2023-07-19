@@ -36,18 +36,18 @@ What is the BigO of the algorithm below?
                 result[i] *= nums2
 ```
 The answer is O(n^2), 
-In the first line a list is created using a for loop
-```python
-    results = [1 for _ in range(len(nums))]
-```
-This is 0(n)
+    In the first line a list is created using a for loop
+    ```
+        results = [1 for _ in range(len(nums))]
+    ```
+    This is 0(n)
     In the first for loop:
-    ```python
+    ```
         for i, num1 in enumerate(nums):
     ```
     It is also going to take n times to run, so O(n)
     In the last nested forloop, it also need to run n times.
-    ```python
+    ```
         for num2 in nums:
     ```
     So it is also O(n).
