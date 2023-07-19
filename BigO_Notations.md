@@ -35,7 +35,8 @@ What is the BigO of the algorithm below?
                     continue
                 result[i] *= nums2
 ```
-The answer is O(n^2), 
+The answer is O(n^2)
+ 
     In the first line a list is created using a for loop
     ```
         results = [1 for _ in range(len(nums))]
