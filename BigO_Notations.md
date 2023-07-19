@@ -41,36 +41,36 @@ In the first line a list is created using a for loop
     results = [1 for _ in range(len(nums))]
 ```
 This is 0(n)
-In the first for loop:
-```python
-    for i, num1 in enumerate(nums):
-```
-It is also going to take n times to run, so O(n)
-In the last nested forloop, it also need to run n times.
-```python
-    for num2 in nums:
-```
-So it is also O(n).
-All other operations within the loop are in constant time O(1).
-Since the second O(n) for loop is within the first for loop of O(n)
-So we have:
-``` 
-    O(n) * O(n)
-```
-But within the secont for loop we have 3 operations done is Constant time O(1). So
-``` 
-    O(n) * O(3n)
-```
-Including the list generation using a for loop 
-``` 
-    0(n) + (O(n) * O(3n))
-```
-In mathematical terms:
-```
-    n + n(3n)
-```
-Since all constant are insignificant,then 
-```
-    n + n(n) => n + n^2
-```
-The more dominant term is n^2, the the method runs in O(n^2)
+    In the first for loop:
+    ```python
+        for i, num1 in enumerate(nums):
+    ```
+    It is also going to take n times to run, so O(n)
+    In the last nested forloop, it also need to run n times.
+    ```python
+        for num2 in nums:
+    ```
+    So it is also O(n).
+    All other operations within the loop are in constant time O(1).
+    Since the second O(n) for loop is within the first for loop of O(n)
+    So we have:
+    ``` 
+        O(n) * O(n)
+    ```
+    But within the secont for loop we have 3 operations done is Constant time O(1). So
+    ``` 
+        O(n) * O(3n)
+    ```
+    Including the list generation using a for loop 
+    ``` 
+        0(n) + (O(n) * O(3n))
+    ```
+    In mathematical terms:
+    ```
+        n + n(3n)
+    ```
+    Since all constant are insignificant,then 
+    ```
+        n + n(n) => n + n^2
+    ```
+    The more dominant term is n^2, the the method runs in O(n^2)
