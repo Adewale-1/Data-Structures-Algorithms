@@ -132,9 +132,9 @@ This answer is ```O(hw)```
 <details>
  <summary><h3>Explanation</h3></summary>
 Here is a nested list
-```
-    [[] [] []]
-```
+    ```
+        [[] [] []]
+    ```
 In the form
 ```
     [
