@@ -38,6 +38,7 @@ What is the BigO of the algorithm below?
 The answer is ```O(n^2)``` 
 <details>
  <summary><h3>Explanation</h3></summary>
+
 In the first line a list is created using a for loop
 ```
     results = [1 for _ in range(len(nums))]
@@ -97,6 +98,7 @@ What is the BigO of the algorithm below?
 The answer is O(n + m) 
 <details>
  <summary><h3>Explanation</h3></summary>
+
 Let ```nums1``` is ```n``` and ```nums2``` is ```m```. In the first first for loop ```for num in mums1:```, that is in Linear time of O(n) and operations append with it is in Constant time of O(1). 
 The second for loop```for i, num in enumerate(nums2):``` is of O(m), and operations within it are O(1),O(1), and O(1).
 So in total, all operations in the method are
