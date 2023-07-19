@@ -36,7 +36,8 @@ What is the BigO of the algorithm below?
                 result[i] *= nums2
 ```
 The answer is ```O(n^2)``` 
-### Explanation
+<details>
+ <summary><h3>Explanation</h3></summary>
 In the first line a list is created using a for loop
 ```
     results = [1 for _ in range(len(nums))]
@@ -93,7 +94,8 @@ What is the BigO of the algorithm below?
         return results
 ```
 The answer is O(n + m) 
-### Explanation
+<details>
+ <summary><h3>Explanation</h3></summary>
 Let ```nums1``` is ```n``` and ```nums2``` is ```m```. In the first first for loop ```for num in mums1:```, that is in Linear time of O(n) and operations append with it is in Constant time of O(1). 
 The second for loop```for i, num in enumerate(nums2):``` is of O(m), and operations within it are O(1),O(1), and O(1).
 So in total, all operations in the method are
@@ -113,42 +115,47 @@ So O(n + m)
 ## Question 5
 What is the BigO of the algorithm below?
 ```python
-    def example(nested_list):
-        total = 0
+def example(nested_list):
+    total = 0
 
-        for inner_list in nested_list:
-            for num in  inner_list:
-                total += num
-            
-            for num in inner_list:
-                total += num
+    for inner_list in nested_list:
+        for num in  inner_list:
+            total += num
+        
+        for num in inner_list:
+            total += num
 
-            for num in inner_list:
-                total += num
+        for num in inner_list:
+            total += num
 
-        return total
+    return total
 ```
-This answer is ```O(hw)```
+This answer is `O(hw)`
+
 <details>
- <summary><h3>Explanation</h3></summary>
+ <summary><b>Explanation</b></summary>
+
 Here is a nested list
-    ```
-        [[] [] []]
-    ```
+```
+[[] [] []]
+```
 In the form
 ```
-    [
-        []
-        []
-        []
-    ]
+[
+    []
+    []
+    []
+]
 ```
-So we say, ```h``` is the height if the list, and ```w``` is the width of the each nested list in the list. 
-Going over the lines,In the first for loop, it iterate over the Height of the list for the amount of list resent so that is ```0(h)```, as the number of nested list increases so does the value of ```h```.
-In the Operations(3) within the first for loop, they iterate over the elements present in each nested list, that is in ```O(w)```.Since there are 3 operations, we could say it is in ```O(3w)```. 
+So we say, `h` is the height if the list, and `w` is the width of the each nested list in the list. 
+
+Going over the lines,In the first for loop, it iterate over the Height of the list for the amount of list resent so that is `O(h)`, as the number of nested list increases so does the value of `h`.
+
+In the Operations(3) within the first for loop, they iterate over the elements present in each nested list, that is in `O(w)`.Since there are 3 operations, we could say it is in `O(3w)`. 
+
 So,
 ```
-    0(1) + (0(h) * O(3w)) + 0(1)
+    O(1) + (O(h) * O(3w)) + O(1)
 ```
 Mathematically,
 ```
@@ -158,4 +165,5 @@ All constant are dropped
 ```
     hw
 ```
-Thus ```O(hw)```
+Thus `O(hw)`
+</details>
