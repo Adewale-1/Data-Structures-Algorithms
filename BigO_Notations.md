@@ -172,10 +172,10 @@ All constant are dropped
 Thus ```O(hw)```
 </details>
 
-## Question 5
+## Question 6
 What is the BigO of the algorithm below?
 ```python
-def example(nested_list):
+def example(n):
     if n == 1:
         return 1
     if n == 2:
@@ -193,15 +193,44 @@ This answer is `O(2^n)`
 
 In this recursive method, Recursion is being used ```twice```. Here is the structure of the algorithm if ```n = 5```
 ```
-                5
-            /       \
-        4            3
-       / \           / \   
-    3       2       2    1
-   / \
-2       1
+                            5
+                        /       \
+                    4            3
+                / \           / \   
+                3       2       2    1
+            / \
+            2       1
 ```
 
 For each input to the function, 2 recursive calls are made.
 <details>
  
+## Question 7
+What is the BigO of the algorithm below?
+```python
+def example(lst, search_lst):
+    max_value = max(lst)
+
+    for value in search_lst:
+        if max_value == value:
+            return True
+
+    return False
+```
+This answer is ```O(n + m)```
+<details>
+ <summary><b>Explanation</b></summary>
+
+Let ```lst = n``` and ```search_list = m```.In the first operation, finding the maximum value in a list require some sort of iteration over than list ```n``` times, so has the value of ```n``` increases so will the time taken to find the  ```max``` also increase.This is done in ```O(n)```.
+
+In the for loop, that is in  ```O(m)```
+So we have;
+```
+    O(n) + O(1m)
+```
+Mathematically,
+```
+    n + m
+```
+Thus ```O(n + m)```
+<details>
