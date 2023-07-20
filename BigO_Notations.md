@@ -60,7 +60,7 @@ So we have:
 ``` 
     O(n) * O(n)
 ```
-But within the secont for loop we have 3 operations done is Constant time O(1). So
+But within the secont for loop we have 3 operations done is ```constant time O(1)```. So
 ``` 
     O(n) * O(3n)
 ```
@@ -95,7 +95,7 @@ What is the BigO of the algorithm below?
 
         return results
 ```
-The answer is O(n + m) 
+The answer is ```O(n + m)``` 
 <details>
  <summary><h3>Explanation</h3></summary>
 
@@ -376,7 +376,7 @@ def example(n , results):
 The answer is ```O(n!)```.
 <details>
  <summary><b>Explanation</b></summary>
- 
+
 If ```n = 3```, then on every recursive call ```n``` is reduced, but because in the for loop, the range is from 1 to n, which in this case is from 1 - 3, then the recursive call reduces ```n``` by ```1```, ```n``` times.Here is the structure
 ```
                                     3
