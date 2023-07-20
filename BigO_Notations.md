@@ -127,7 +127,7 @@ What is the BigO of the algorithm below?
         return results
 ```
 
-The answer is ```O(n + m)```
+The answer is `O(n + m)`
 
 <details>
  <summary><h3>Explanation</h3></summary>
@@ -495,5 +495,12 @@ If `n = 3`, then on every recursive call `n` is reduced, but because in the for 
 ```
 
 Thus `n!`.
+
+</details>
+
+<details>
+ <summary><b>References</b></summary>
+
+[Tech with Tim](https://www.youtube.com/watch?v=6aDHWSNKlVw)
 
 </details>
