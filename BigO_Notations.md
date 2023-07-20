@@ -1,8 +1,8 @@
-# Big O
+# Big O Notation
 
 It is used to classify algorithms according to how their runtime or space requirements grows as the input size grows.
 
-  <img src="/Assets/BigO.png" width="600" height="300" />
+  <img src="/Assets/BigO.png" width="600" height="400" />
 
 ## Question 1
 
@@ -127,7 +127,7 @@ What is the BigO of the algorithm below?
         return results
 ```
 
-The answer is `O(n + m)`
+The answer is ```O(n + m)```
 
 <details>
  <summary><h3>Explanation</h3></summary>
