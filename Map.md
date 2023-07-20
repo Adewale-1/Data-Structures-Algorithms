@@ -10,8 +10,9 @@ This returns the order of elements in the map, as it was inputed.
 ## TreeMap
 This returns a structured order of the elements in the map.
 
+
 ## Methods
-## put<K,V>
+### put<K,V>
 Inserts the association of a key ```k``` and a value ```v``` into the map.If the key is present, then the new value replaces the old.
 
 ## putAll()
