@@ -203,8 +203,8 @@ In this recursive method, Recursion is being used ```twice```. Here is the struc
 ```
 
 For each input to the function, 2 recursive calls are made.
-<details>
- 
+</details>
+
 ## Question 7
 What is the BigO of the algorithm below?
 ```python
@@ -233,7 +233,7 @@ Mathematically,
     n + m
 ```
 Thus ```O(n + m)```
-<details>
+</details>
 
 ## Question 8
 What is the BigO of the algorithm below?
@@ -253,7 +253,7 @@ This answer is `O(logn)`
 
 If ```n = 40``` , then after each recursive call, ```n``` becomes smaller, ```20,10,5,2,1```. This is ```logrithemic base of 2``` ,```log(n)```. 
 
-<details>
+</details>
 
 ## Question 9 (Hard)
 What is the BigO of the algorithm below?
@@ -298,7 +298,7 @@ Mathematically;
     n * (k +klog(k))
 ```
 Thus, ```nklog(k)```
-<details>
+</details>
 
 ## Question 10 (Hard)
 What is the BigO of the algorithm below?
@@ -357,26 +357,33 @@ Dropping constants and non-dominant terms
     nlog(n) + mlog(m) + (n + m)k   
 ```
 Thus, ```O(nlog(n) + mlog(m) + (n + m)k )```
-<details>
+</details>
 
 ## Question 11 (Hard)
 What is the BigO of the algorithm below?
 ```python
 def example(n , results):
-    if n == 0:
-        return
+    if n == 1:
+        return 1
 
-    # Recursive call
-    example(n//4, results)
-
-    for i in range(n):
-        results.append(i)
-
-    results.sort()
+    total = 0
+    for _ in range(n):
+        total += example(n - 1)
+                    
+    return total
 
 ```
-The answer is ```O(nlog(n) + mlog(m) + (n + m)k )```.
+The answer is ```O(n!)```.
 <details>
  <summary><b>Explanation</b></summary>
  
-<details>
+If ```n = 3```, then on every recursive call ```n``` is reduced, but because in the for loop, the range is from 1 to n, which in this case is from 1 - 3, then the recursive call reduces ```n``` by ```1```, ```n``` times.Here is the structure
+```
+                                    3
+                                /   |    \
+                            2       2         2
+                           / \     / \       / \
+                          1   1   1   1     1   1
+```
+Thus ```n!```.
+</details>
