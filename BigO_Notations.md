@@ -171,3 +171,37 @@ All constant are dropped
 ```
 Thus ```O(hw)```
 </details>
+
+## Question 5
+What is the BigO of the algorithm below?
+```python
+def example(nested_list):
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+
+    # Recursive call
+    last = example(n-1);
+    second_last = example(n-2);
+
+    return last + second_last
+```
+This answer is `O(2^n)`
+<details>
+ <summary><b>Explanation</b></summary>
+
+In this recursive method, Recursion is being used ```twice```. Here is the structure of the algorithm if ```n = 5```
+```
+                5
+            /       \
+        4            3
+       / \           / \   
+    3       2       2    1
+   / \
+2       1
+```
+
+For each input to the function, 2 recursive calls are made.
+<details>
+ 
