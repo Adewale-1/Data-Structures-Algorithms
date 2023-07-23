@@ -4,7 +4,7 @@
 ```
 ```HashMap```, ```TreeMap```, and ```LinkedHashMap``` all implements the Map interface.
 ## HashMap
-This has a faster runtime complexity than any other implementaion of the Map interface.No ordering.
+This has a faster runtime complexity than any other implementation of the Map interface.No ordering.
 ## LinkedHashMap
 This returns the order of elements in the map, as it was inputed.
 ## TreeMap

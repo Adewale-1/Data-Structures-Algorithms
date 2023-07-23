@@ -10,7 +10,7 @@ Returns a fixed size list backed by the specified array
     int intArr[] = {1,2,3,4,5,6,7,8};
     System.out.println(Array.asList(intArr));
 
-    // output => [1,2,3,4,5,6,7,8]
+    output => [1,2,3,4,5,6,7,8]
 ```
 
 ### binarySearch(array, x):
@@ -23,7 +23,7 @@ Searches for a value in the specified sorted array and returns the index, if the
 
     System.out.println(Arrays.binarySearch(intArr, 3));
 
-    // output => 2
+    output => 2
 ```
 
 ### compare( array 1, array 2):
@@ -39,7 +39,7 @@ Copies the specified array, truncating or padding with the default value so the 
     System.out.println("Integer Array: " + Arrays.toString(
     Arrays.copyOf(intArr, 10)));
 
-    // output => Integer Array: [10, 20, 15, 22, 35, 0, 0, 0, 0, 0]
+    output => Integer Array: [10, 20, 15, 22, 35, 0, 0, 0, 0, 0]
 ```
 
 ### copyOf(originalArray, fromIndex, endIndex):
@@ -49,7 +49,7 @@ Copies the specified array, truncating or padding with the default value so the 
     System.out.println("Integer Array: " + Arrays.toString(
     Arrays.copyOfRange(intArr, 1, 3)));
 
-    // output => Integer Array: [20, 15]
+    output => Integer Array: [20, 15]
 ```
 
 ### deepToString(array):
@@ -66,7 +66,7 @@ Checks if both the arrays are equal or not.
     int intArr1[] = { 10, 15, 22 };
     System.out.println("Integer Arrays on comparison: " + Arrays.equals(intArr, intArr1));
 
-    // output => Integer Arrays on comparison: false
+    output => Integer Arrays on comparison: false
 ```
 
 ### mismatch(array1, array2):
@@ -78,7 +78,7 @@ Finds and return the index of the first unmatched element between the two specif
     int intArr1[] = { 10, 20, 15 ,5};
     System.out.println("The element mismatched at index: " + Arrays.mismatch(intArr, intArr1));
 
-    // output => The element mismatched at index: 3
+    output => The element mismatched at index: 3
 ```
 
 ### sort(originalArray):
@@ -90,7 +90,7 @@ Sort the complete array in ascending order.
     Arrays.sort(intArr);
     System.out.println("Integer Array: " + Arrays.toString(intArr));
 
-    // output => Integer Array: [10, 15, 20, 22, 35]
+    output => Integer Array: [10, 15, 20, 22, 35]
 ```
 
 ### sort(originalArray,formIndex,endIndex):
@@ -101,9 +101,9 @@ Sort the specified range of array in ascending order from a start index to a end
     int intArr[] = { 10, 15, 2, 1, 35 };
     Arrays.sort(intArr, 1, 3);
     System.out.println("Integer Array: "
-    +Arrays.toString(intArr));
+    Arrays.toString(intArr));
 
-    // output => Integer Array: [10, 2, 15, 1, 35]
+    output => Integer Array: [10, 2, 15, 1, 35]
 ```
 
 ### toString(originalArray):
@@ -114,7 +114,7 @@ It returns a string representation of the contents of this array. Elements are c
     int intArr[] = { 10, 20, 15, 22, 35 };
     System.out.println("Integer Array: " + Arrays.toString(intArr));
 
-    // output => Integer Array: [10, 20, 15, 22, 35]
+    output => Integer Array: [10, 20, 15, 22, 35]
 ```
 
 
