@@ -130,6 +130,9 @@ public class DSA {
         return i;
     }
 
+
+
+
     // Search Algorithms
     // This method searches for the position of a target within a sorted array. Half
     // of the array was elimated during each step

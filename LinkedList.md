@@ -298,3 +298,36 @@ This method returns a string containing all of the elements in the list.
 	output =>	t
 
 ```
+
+
+toString()
+toArray()
+get(index x)
+getLast()
+getFirst()
+remove(element)
+add(element)
+addAll(collection)
+addFirst(element)
+addLast(element)
+contains(element)
+clear()
+clone()
+offer(element)
+poll()
+pollLast()
+pollFirst()
+push(element)
+pop()
+
+
+
+size()
+remove()
+remove(index x)
+set(index, value)
+removeLast(elment)
+peek()
+peekLast()
+peekFirst()
+indexOf(element)

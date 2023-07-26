@@ -47,3 +47,18 @@ This returns an integer value for the number of elements in the set.
 
 ### toArray()
 This method is used to form an array of the same elements as that of the set.
+
+
+
+
+add(element)
+size()
+isEmpty()
+remove(element)
+contains(element)
+
+
+toArray()
+addAll(collection)
+clear()
+containsAll(collection)

@@ -69,3 +69,12 @@ It determines whether an object exists in the stack, if the element is found, it
 
     output => 7
 ```
+
+
+push(element)
+pop()
+size()
+peek()
+
+empty()
+search(element)

@@ -154,3 +154,23 @@ This method is used to return and remove the head of the queue.
 ### peek()
 
 This method returns a copy of the head of the queue.
+
+
+
+
+
+
+offer(element)
+poll()
+add(element)
+addAll(collection)
+remove(element)
+size()
+contains(element)
+isEmpty()
+
+clear()
+indexOf(element)
+containsAll(collection)
+set(index, element)
+lastIndexOf(element)

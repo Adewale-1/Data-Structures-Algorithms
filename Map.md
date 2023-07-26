@@ -159,3 +159,16 @@ Return a set of all the key/value mapping present in a map.
 
     output => [Horse=3, Goat=9, Boy=3, Girl=4]
 ```
+
+
+put(K,V)
+putAll(collection)
+entrySet()
+keySet()
+values()
+containsKey()
+containsValue()
+replace(K,V)
+remove(K)
+
+get(K)
