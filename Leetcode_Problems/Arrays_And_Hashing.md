@@ -84,7 +84,7 @@ Specifically, ans is the concatenation of two nums arrays.
 
 Return the array ```ans```.
 ```java
-    class Solution {
+class Solution {
     public int[] getConcatenation(int[] nums) {
         int[] newArray = new int[nums.length * 2];
 
@@ -99,4 +99,39 @@ Return the array ```ans```.
         return newArray;
     }
 }
+```
+
+## Group Anagrams
+Given an array of strings ```strs```, group the anagrams together. You can return the answer in any order.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+```java
+class Solution {
+    public List<List<String>> groupAnagrams(String[] strs) {
+        Map<String,List<String>> map = new HashMap<>();
+
+        for (String s : strs){
+            
+            String key = sort(s);
+            // Checks if a sorted string is the same as a key in the map, if it is, add the string to the values in map.
+            if(map.containsKey(key)){
+                map.get(key).add(s);
+            }
+            else{
+                // If it is not the same as a key, add it to the map with the sorted key as key and the unsorted string as value.
+                List<String> list = new ArrayList<>();
+                list.add(s);
+                map.put(key,list);
+            }
+        }
+        return new ArrayList<>(map.values());
+        
+    }
+    public static String sort(String s){
+        char[] string = s.toCharArray();
+        Arrays.sort(string);
+
+        return string.toString();
+    }
+}    
 ```
