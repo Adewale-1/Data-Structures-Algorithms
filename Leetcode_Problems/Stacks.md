@@ -58,3 +58,66 @@ The test cases are generated such that the answer and all intermediate calculati
     }
 }
 ```
+## Evaluate Reverse Polish Notation
+
+You are given an array of strings tokens that represents an arithmetic expression in a Reverse Polish Notation.
+
+Evaluate the expression. Return an integer that represents the value of the expression.
+
+Note that:
+
+- The valid operators are ```'+'```, ```'-'```, ```'*'```, and ```'/'```.
+- Each operand may be an integer or another expression.
+- The division between two integers always truncates toward zero.
+- There will not be any division by zero.
+- The input represents a valid arithmetic expression in a reverse polish notation.
+- The answer and all the intermediate calculations can be represented in a 32-bit integer.
+
+```java
+class Solution {
+    public int evalRPN(String[] tokens) {
+        Stack<Integer> stack = new Stack<>();
+        for (int i = 0; i < tokens.length; i++){
+            if (!tokens[i].equals("+") && !tokens[i].equals("-") && !tokens[i].equals("*") && !tokens[i].equals("/")){
+                stack.push(Integer.parseInt(tokens[i]));
+            }
+            else if (tokens[i].equals("+")){
+                stack.push(sum(stack));
+            }
+            else if (tokens[i].equals("-")){
+                stack.push(minus(stack));
+            }
+            else if (tokens[i].equals("*")){
+                stack.push(product(stack));
+            }
+            else if (tokens[i].equals("/")){
+                stack.push(divide(stack));
+            }
+        }
+        Integer total = stack.pop();
+        return total;
+    }
+
+
+    public static Integer sum(Stack<Integer> stack){
+        Integer value1 = stack.pop();
+        Integer value2 = stack.pop();
+        return value1 + value2;
+    }
+    public static Integer minus(Stack<Integer> stack){
+        Integer value1 = stack.pop();
+        Integer value2 = stack.pop();  
+        return value2 - value1;      
+    }
+    public static Integer product(Stack<Integer> stack){
+        Integer value1 = stack.pop();
+        Integer value2 = stack.pop(); 
+        return value1 * value2;       
+    }
+    public static Integer divide(Stack<Integer> stack){
+        Integer value1 = stack.pop();
+        Integer value2 = stack.pop();  
+        return value2 / value1;      
+    }
+}
+```
