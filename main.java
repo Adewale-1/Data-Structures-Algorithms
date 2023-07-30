@@ -1,7 +1,7 @@
 public class main {
     public static void main(String[] args) {
         
-        LL list = new LL();
+        DLL list = new DLL();
 
         list.insertFirst(3);
 
@@ -13,7 +13,9 @@ public class main {
 
         list.insert(2, 2);
 
-        System.out.println(list.size());
+        // System.out.println(list.size());
+
+        // list.delete(3);
 
         list.display();
     }

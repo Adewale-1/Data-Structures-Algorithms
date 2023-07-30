@@ -116,16 +116,16 @@ public class LL {
        }
        else{
             Node temp = head;
-            for (int i = 1; i < index - 1; i++) {
-                temp = temp.next;
-            }
-            Node after = head;
-            for (int i = 1; i < index + 1; i++) {
-                after = temp.next;
-            }
 
-            temp.next = after;        
+            for (int i = 1; i < index ; i++) {
+                temp  = temp.next;
+            }
+            Node after = temp.next.next;
+
+            temp.next = after;
+
        }
+       size--;
     }
 
 
