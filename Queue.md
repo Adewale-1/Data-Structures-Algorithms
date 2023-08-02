@@ -159,18 +159,18 @@ This method returns a copy of the head of the queue.
 
 
 
-
+add(element)
+addAll(element)
 offer(element)
 poll()
-add(element)
-addAll(collection)
 remove(element)
 size()
+peek()
+
 contains(element)
 isEmpty()
-
-clear()
+removeAll()
+get(index)
+set(element, index)
 indexOf(element)
-containsAll(collection)
-set(index, element)
-lastIndexOf(element)
+conatinsAll(collection)

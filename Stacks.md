@@ -73,8 +73,6 @@ It determines whether an object exists in the stack, if the element is found, it
 
 push(element)
 pop()
-size()
 peek()
-
-empty()
+isEmpty()
 search(element)

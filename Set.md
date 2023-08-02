@@ -52,13 +52,11 @@ This method is used to form an array of the same elements as that of the set.
 
 
 add(element)
-size()
-isEmpty()
+addAll(collections)
+removeAll(collections)
 remove(element)
 contains(element)
-
+size()
+isEmpty()
 
 toArray()
-addAll(collection)
-clear()
-containsAll(collection)
