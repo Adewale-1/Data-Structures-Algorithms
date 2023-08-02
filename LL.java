@@ -40,6 +40,8 @@ public class LL {
         System.out.print("null");
     }
 
+
+
     public void insertLast (int value){
         if (tail == null){
             insertFirst(value);
