@@ -41,4 +41,5 @@ Get the value of a key in a map at a specific index in an HashMap.First only wor
 Question 128 .Longest Sequence
 Question 206  Reverse LinkedList given head
 Question 26 Remove Duplicates from Sorted Array
-
+Question 121 Best Time to buy and sell stock
+Question 238 Product of array except self
