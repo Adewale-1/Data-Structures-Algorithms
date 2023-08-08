@@ -2,13 +2,14 @@
 
 Convert an interger into a string using ```String.valueOf(x)```.
 Convert a String to integer using ```Integer.parseInt(string)``` or ```Integer.parseDouble(string)```.
+
 When finding the kth element or kth most frequent element 
 ```java
     PriorityQueue<Integer> queue = new PriorityQueue<>(Collection.reverseOrder());
 ```
 using a map
 ```java
-    PriorityQueue<Integer> queue = new PriorityQueue<>((a,b) -> b.getValue()-a.getValue());
+    PriorityQueue<Map.Entry<Integer,Integer>> queue = new PriorityQueue<>((a,b) -> b.getValue()-a.getValue());
 ```
 
 LinkedList
@@ -38,8 +39,11 @@ Get the value of a key in a map at a specific index in an HashMap.First only wor
     }
 ```
 ##
-Question 128 .Longest Sequence
-Question 206  Reverse LinkedList given head
-Question 26 Remove Duplicates from Sorted Array
-Question 121 Best Time to buy and sell stock
-Question 238 Product of array except self
+Question 128    Longest Sequence
+Question 206    Reverse LinkedList given head
+Question 26     Remove Duplicates from Sorted Array
+Question 121    Best Time to buy and sell stock
+Question 238    Product of array except self
+Question 739    Daily Temperatures
+
+

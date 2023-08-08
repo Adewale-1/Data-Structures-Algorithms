@@ -13,11 +13,17 @@ public class main {
 
         list.insertLast(18);
 
-        // list.insert(2, 2);
+        list.insert(2, 1);
 
         // System.out.println(list.size());
 
-        // list.delete(3);
+        // list.delete(0);
+
+        // list.deleteLast();
+
+        list.deleteFirst();
+
+    
 
         list.display();
     }
